@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinSqlitepcl.Views.PersonUpdateView">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView>
+                <TableRoot>
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="İsim: "></Label>
+                                    <Entry x:Name="enty_updt_name" Placeholder="İsim Girin"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Yaş: "></Label>
+                                    <Entry x:Name="entry_updt_age" Placeholder="Yaş Girin"></Entry>
+                                </StackLayout>
+                                <StackLayout>
+                                    <Button Text="Onayla" Clicked="onApproveUpdate"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
