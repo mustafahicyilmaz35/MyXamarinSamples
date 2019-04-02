@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HavaDurumu"
+             x:Class="HavaDurumu.MainPage">
+
+    <Grid Margin="20,35,20,20">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Entry x:Name="cityEntry" Grid.ColumnSpan="2" Text="Kütahya"/>
+        <Button Grid.ColumnSpan="2" Grid.Row="1" Text="Hava Durumu Sorgula" Clicked="onButtonClicked"/>
+        <Label Grid.Row="2" Text="Konum"/>
+        <Label Grid.Row="2" Grid.Column="1" Text="{Binding Title}"/>
+        <Label Grid.Row="3" Text="Sıcaklık: "/>
+        <Label Grid.Row="3" Grid.Column="1" Text="{Binding Main.Temperature}"/>
+        <Label Grid.Row="4" Text="Rüzgar Hızı: "/>
+        <Label Grid.Row="4" Grid.Column="1" Text="{Binding Wind.Speed}"/>
+        <Label Grid.Row="5" Text="Nem"/>
+        <Label Grid.Row="5" Grid.Column="1" Text="{Binding Main.Humidity}"/>
+        <Label Grid.Row="6"  Text="Bulut/Sis:"/>
+        <Label Grid.Row="6" Grid.Column="1" Text="{Binding Weather[0].Visibility}"/>
+
+
+    </Grid>
+
+</ContentPage>
