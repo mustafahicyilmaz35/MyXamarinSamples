@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EssentialDemo.Views.DeviceInfoPage">
+    <ContentPage.Content>
+        <ScrollView Margin="12">
+            <StackLayout>
+                <Label Text="Device"/>
+                <Label x:Name="DeviceLAbel"/>
+                <Label Text="Manufacturer"/>
+                <Label x:Name="ManufacturerLabel"/>
+                <Label Text="Device Name: "/>
+                <Label x:Name="DeviceNameLabel"/>
+                <Label Text="Version:"/>
+                <Label x:Name="VersionLabel"/>
+                <Label Text="Platform"/>
+                <Label x:Name="PlatformLabel"/>
+                <Label Text="Idiom"/>
+                <Label x:Name="IdiomLabel"/>
+                <Label Text="Device Type: "/>
+                <Label x:Name="DeviceTypeLabel"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

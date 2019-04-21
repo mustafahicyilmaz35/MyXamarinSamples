@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EssentialDemo.Views.SmsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sms" FontAttributes="Bold" />
+            <Entry x:Name="entry_textNumber" Placeholder="Please Enter a Number"/>
+            <Entry x:Name="enrty_textMessage" Placeholder="Please Write Your Message"/>
+            <Button x:Name="btn_Message" Text="Send" Clicked="onSmsButtonClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

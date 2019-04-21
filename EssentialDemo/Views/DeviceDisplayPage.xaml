@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EssentialDemo.Views.DeviceDisplayPage">
+    <ContentPage.Content>
+        <StackLayout Margin="12">
+            <Label Text="Orientation"/>
+            <Label x:Name="OrientationLabel"/>
+            <Label Text="Rotation"/>
+            <Label x:Name="RotationLabel"/>
+            <Label Text="Screen Width"/>
+            <Label x:Name="ScreenWidthLabel"/>
+            <Label Text="Screen Heigth"/>
+            <Label x:Name="ScreenHeightLabel"/>
+            <Label Text="Density"/>
+            <Label x:Name="DensityLabel"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

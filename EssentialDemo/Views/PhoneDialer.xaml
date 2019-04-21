@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EssentialDemo.Views.PhoneDialer">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontAttributes="Bold" Text="How to Open a phone number"/>
+            <Entry x:Name="enrtyNum" Placeholder="Phone Number"/>
+            <Button Text="Call Now" Clicked="PhoneDialerButtonClicek"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

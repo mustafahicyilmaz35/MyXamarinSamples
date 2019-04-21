@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EssentialDemo.Views.GeoPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+
+            <Button x:Name="btn_location" Text="Get Location" Clicked="onGeoButtonClicked"/>
+            <Label HorizontalTextAlignment="Center" x:Name="lbl_Latitude"/>
+            <Label HorizontalTextAlignment="Center" x:Name="lbl_Aptitude"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

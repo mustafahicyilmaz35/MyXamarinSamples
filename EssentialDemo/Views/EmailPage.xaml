@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EssentialDemo.Views.EmailPage">
+    <ContentPage.Content>
+        <ScrollView Margin="12">
+            <StackLayout Spacing="10">
+                <Entry x:Name="ToEntry" Placeholder="To"/>
+                <Entry x:Name="SubjectEntry" Placeholder="Subject"/>
+                <Editor x:Name="MessageEditor"/>
+                <Button Text="Send" Clicked="onSendButtonClicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
